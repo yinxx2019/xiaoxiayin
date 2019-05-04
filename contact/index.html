@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Pacifico|Oswald|Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="http://yinx19.wludci.info/css/style.css">
+    <title>Xiaoxia Yin - Contact Me</title>
+  </head>
+  <body>
+    <div id="navgroup">
+      <div class="row">
+        <div class="col-xs-11 col-sm-6">
+          <h1 id="name"><a href="http://yinx19.wludci.info">Xiaoxia Yin</a></h1>
+        </div>
+        <div class="col-sm-6">
+          <ul id="navmenu">
+            <li><a href="http://yinx19.wludci.info">Home</a></li>
+            <li><a href="http://yinx19.wludci.info/experiences">Experiences</a></li>
+            <li><a href="http://yinx19.wludci.info/bylines">Bylines</a></li>
+            <li><a href="/portfolio">Portfolio</a></li>
+            <li><a href="http://yinx19.wludci.info/contact" id="active">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="firstdiv">
+      <form action="https://www.jasontmickel.com/dci108/mailform/mail.php" method="post">
+        <fieldset class="row">
+          <div class="col-xs-12">
+            <label for="contact" class="col-xs-2 col-lg-1">Name:</label>
+            <input type="text" name="contact" id="contact" class="col-xs-6 col-xs-offset-2 col-sm-offset-0 col-md-4" placeholder="Your Name" required>
+          </div>
+          <div class="col-xs-12">
+            <label for="email" class="col-xs-2 col-lg-1">Email:</label>
+            <input type="email" name="email" id="email" class="col-xs-6 col-xs-offset-2 col-sm-offset-0 col-md-4" placeholder="Your E-mail Address" required>
+          </div>
+          <div class="col-xs-12">
+            <label for="purpose" class="col-xs-2 col-lg-1">Purpose:</label>
+            <select name="purpose" id="purpose" class="col-xs-6 col-xs-offset-2 col-sm-offset-0 col-md-4" required>
+              <option value="Nature of Your Message" selected>Nature of Your Message</option>
+              <option value="question">Question</option>
+              <option value="comment">Comment</option>
+              <option value="request">Request</option>
+            </select>
+          </div>
+          <div class="col-xs-12">
+            <label for="message" class="col-xs-12 col-sm-2 col-lg-1">Message:</label>
+            <textarea name="message" id="message" cols="50" rows="10" class="col-xs-offset-0" placeholder ="Please limit your message to approximately 800 characters" required></textarea>
+          </div>
+          <input type="hidden" name="email_to" id="email_to" value="yinx19@mail.wlu.edu">
+          <div class="col-xs-offset-9 col-lg-offset-6">
+            <button name="submit" id="submitbutton">Submit</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <footer class="row">&copy;2019, Xiaoxia Yin</footer>
+  </body>
+</html>

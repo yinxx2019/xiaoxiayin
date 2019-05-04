@@ -1,0 +1,89 @@
+{
+    "type" : "FeatureCollection",
+    "features" : [
+      {
+        "type" : "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-122.338204, 47.607695]
+        },
+        "properties": {
+          "position": "Public Relations Intern",
+          "company": "Zillow Group",
+          "time": "May 2018 - August 2018",
+          "learn":"#seattle-intern",
+          "icon": "http://maps.google.com/mapfiles/kml/paddle/red-stars.png"
+        }
+      },
+      {
+        "type" : "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-79.444929, 37.790723]
+        },
+        "properties": {
+          "position": "Content Creator Specialist",
+          "company": "Washington and Lee University Office of Communications and Public Affairs",
+          "time": "2018 - present",
+          "learn":"#wlcomm",
+          "icon": "http://maps.google.com/mapfiles/kml/paddle/red-stars.png"
+        }
+      },
+      {
+        "type" : "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-0.117721, 51.531419]
+        },
+        "properties": {
+          "position": "Correspodent",
+          "company": "Migrant Voice",
+          "time": "June 2017 - August 2017",
+          "learn":"#london-intern",
+          "icon": "http://maps.google.com/mapfiles/kml/paddle/red-stars.png"
+        }
+      },
+      {
+        "type" : "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [114.164130, 22.280223]
+        },
+        "properties": {
+          "position": "Communications Intern",
+          "company": "China Everbright Limited",
+          "time": "April 2017 - June 2017",
+          "learn":"#hongkong-intern",
+          "icon": "http://maps.google.com/mapfiles/kml/paddle/red-stars.png"
+        }
+      },
+      {
+        "type" : "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [116.397187, 39.916567]
+        },
+        "properties": {
+          "position": "Exhibition Coordinator",
+          "company": "The Palace Museum",
+          "time": "May 2016 - July 2016",
+          "learn":"#beijing-intern",
+          "icon": "http://maps.google.com/mapfiles/kml/paddle/red-stars.png"
+        }
+      },
+      {
+        "type" : "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [136.963249, 35.148249]
+        },
+        "properties": {
+          "position": "Study Abroad",
+          "company": "Nanzan University, Nagoya, Japan",
+          "time": "Fall 2017",
+          "learn": "https://www.nanzan-u.ac.jp/English/cjs/",
+          "icon": "http://maps.google.com/mapfiles/kml/paddle/red-stars.png"
+        }
+      }
+    ]
+  }
