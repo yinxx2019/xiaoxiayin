@@ -28,6 +28,7 @@ div#firstdiv, #bylines-firstdiv {
 
 #mobile {
   display: none;
+  list-style: none;
 
 }
 
