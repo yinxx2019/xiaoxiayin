@@ -11,10 +11,6 @@ div#navgroup {
     z-index: 10;
 }
 
-div#mobilenav {
-    display: inline-block;
-}
-
 div#firstdiv, #bylines-firstdiv {
     padding-top: 10%;
     padding-bottom: 7%;
@@ -28,8 +24,21 @@ div#firstdiv, #bylines-firstdiv {
 
 #mobile {
   display: none;
-  list-style: none;
+}
 
+#mobile li {
+  list-style: none;
+  font-family: "Montserrat","Helvetica Neue",sans-serif;
+}
+
+#mobile a {
+  color: #1f1f1f;
+  font-weight: 750;
+  font-size: 14px;
+}
+
+#mobile a:focus {
+  background-color: gray;
 }
 
 #nav-icon {
