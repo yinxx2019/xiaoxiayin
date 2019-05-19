@@ -24,6 +24,8 @@ div#firstdiv, #bylines-firstdiv {
 
 #mobile {
   display: none;
+  text-align: center;
+  line-height: 1.5;
 }
 
 #mobile li {
