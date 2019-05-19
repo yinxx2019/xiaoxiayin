@@ -24,13 +24,14 @@ div#firstdiv, #bylines-firstdiv {
 
 #mobile {
   display: none;
-  text-align: center;
   line-height: 1.5;
 }
 
 #mobile li {
   list-style: none;
   font-family: "Montserrat","Helvetica Neue",sans-serif;
+  text-align: center;
+  line-height: 1.5;
 }
 
 #mobile a {
