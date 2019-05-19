@@ -9,4 +9,4 @@ function displayNav() {
 
 var el;
 el = document.getElementById('nav-icon');
-el.addEventListener('click', displayNav, false);
+el.addEventListener('click', displayNav);
