@@ -1,9 +1,9 @@
 function displayNav() {
   var elt = document.getElementById('mobile').style.display;
   if ( elt == "none") {
-  document.getElementById('mobile').style.display = "block";
-} else {
   document.getElementById('mobile').style.display = "none"
+} else {
+  document.getElementById('mobile').style.display = "block";
 }
 }
 
