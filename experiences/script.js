@@ -3,9 +3,9 @@ function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
        center: {lat: 47.6062, lng: -122.3321},
        zoom: 1,
-       mapTypeId: google.maps.MapTypeId.HYBRID
-    });  
-         
+       mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+
     var infowindow = new google.maps.InfoWindow();
 
     map.data.addListener('click', function(event) {
@@ -18,8 +18,8 @@ function initMap() {
        infowindow.setOptions({pixelOffset: new google.maps.Size(0,-30)});
        infowindow.open(map);
     });
-         
-    map.data.loadGeoJson('geo.json'); 
+
+    map.data.loadGeoJson('geo.json');
     map.data.setStyle(function(feature) {
         return {icon: feature.getProperty('icon')};
     });
