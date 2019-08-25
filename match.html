@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      body {
+        font-family: Helvetica, Arial;
+        color: #484849;
+      }
+      /* Font for the entire e-card*/
+      p {
+        text-align: center;
+      }
+      header {
+        margin: auto;
+        width: 600px;
+        padding-left: 15px
+      }
+      #logo>img {
+        width: 120px;
+      }
+      h1 {
+        font-size: 20px;
+        text-align: center;
+      }
+      header>p {
+        font-size: 1em;
+        text-align: left;
+        line-height: 1.5em;
+      }
+      #importance {
+        width: 320px;
+        margin: auto;
+      }
+      .fa-gift {
+        color: #FF6C0C;
+      }
+      .small-gift {
+        font-size: 40px;
+      }
+      #big-gift {
+        font-size: 80px
+      }
+      #first-gift-icon {
+        margin-left: 8.5%;
+      }
+      .signs {
+        font-size: 40px;
+        padding: 20px;
+        color: #F1D384;
+      }
+      #gifts {
+        width: 298px;
+        margin: auto;
+      }
+      .caption {
+        display: inline-block;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      #your-gift {
+        margin-left: 5%;
+      }
+      #match {
+        margin-left: 11.2%;
+      }
+      #impact {
+        margin-left: 17.7%;
+      }
+      #main {
+        width: 600px;
+        margin: auto;
+      }
+      .benefits {
+        display: inline-block;
+        width: 190px;
+        height: 190px;
+        padding: 10px;
+        position: relative;
+      }
+      .left {
+        margin-left: 90px;
+        margin-right: -4px;;
+      }
+      .top {
+        margin-top: 15px
+      }
+      span[class*="number"] {
+        padding-top: 30px;
+        padding-bottom: 10px;
+        font-size: 40px;
+      }
+      .numbers-orange {
+        padding-right: 5px;
+        font-weight: bold;
+        color: #FF6C0C;
+        display: block;
+      }
+      .numbers-white {
+        padding-right: 5px;
+        font-weight: bold;
+        color: white;
+        display: block;
+      }
+      #top-left, #bottom-right {
+        background-color: #FF6C0C;
+      }
+      #top-left>p, #bottom-right>p {
+        color: white;
+      }
+      #top-left {
+        border-top: #FF6C0C solid 5px;
+        border-left: #FF6C0C solid 5px;
+      }
+      #top-right {
+        background-image: url("https://yinxx724.github.io/svg/gradcap.svg");
+        background-position: center;
+        background-size: 310px;
+        background-repeat: no-repeat;
+        border-top: #FF6C0C solid 5px;
+        border-right: #FF6C0C solid 5px;
+      }
+      #bottom-left {
+        background-image: url("https://yinxx724.github.io/svg/atom.svg");
+        background-position: center;
+        background-size: 360px;
+        background-repeat: no-repeat;
+        border-bottom: #FF6C0C solid 5px;
+        border-left: #FF6C0C solid 5px;
+      }
+      #bottom-right {
+        border-bottom: #FF6C0C solid 5px;
+        border-right: #FF6C0C solid 5px;
+      }
+      #check {
+        margin: 10px auto 5px auto;
+      }
+      #check>p {
+        line-height: 1.5em;
+      }
+      #match-number {
+        color: #FF6C0C;
+        font-size: 28px;
+        font-weight: bold;
+        vertical-align: sub;
+      }
+      #check a {
+        color: #FF6C0C;
+        font-weight: bold
+      }
+      @media only screen and (max-width: 600px) {
+        header, #main {
+          width: 450px !important;
+        }
+        h1 {
+          font-size: 16px !important;
+          text-align: center !important;
+        }
+        header>p {
+          font-size: 1em !important;
+        }
+        .benefits {
+          display: inline-block !important;
+          width: 140px !important;
+          height: 140px !important;
+          padding: 5px !important;
+        }
+        #top-right {
+          background-size: 230px !important;
+        }
+        #bottom-left {
+          background-size: 300px !important;
+        }
+        span[class*="number"] {
+          padding-top: 35px !important;
+          padding-bottom: 10px !important;
+          font-size: 30px !important;
+        }
+        .benefits>p {
+        font-size: 12.1px !important;
+        }
+      }
+      @media only screen and (max-width: 443px) {
+        header, #main {
+          width: 324px !important;
+        }
+        header {
+          font-size: 0.9em !important;
+        }
+        .benefits {
+          display: block !important;
+          padding: 5px !important;
+        margin: auto !important;
+        }
+        #top-right {
+          border-right: none !important;
+          border-top: none !important;
+          border-bottom: 5px solid #FF6C0C !important;
+        }
+        #bottom-left {
+          border: none !important;
+        }
+      }
+      @media only screen and (min-width: 1000px) {
+        header {
+          width: 800px !important;
+        }
+      }
+    </style>
+    <title>Your Employer Can Double Your Impact</title>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <img src="http://www.identity.caltech.edu/site_images/445-logo-sample-small.png" alt="logo">
+      </div>
+      <h1>Your Employer Can Double Your Impact</h1>
+      <p>Dear {{Name}},</p>
+      <p>We would like to thank you again for your gift to Caltech. Your contribution helps make the institute an extraordinary place.</p>
+      <p>We noticed that your employer is {{Company}}, which generously matches employees' donations to Caltech. This is an easy way to maximize your philanthropic impact.</p>
+    </header>
+    <div id="main">
+      <p>Over the past five years, matching gifts made possible:</p>
+      <div class="benefits top left" id="top-left">
+        <p><span class="numbers-white">50+</span>Scholarships, Fellowships and Endowments</p>
+      </div>
+      <div class="benefits top right" id="top-right">
+        <p><span class="numbers-orange">$800K</span>Academic Programs and Professorships</p>
+      </div>
+      <div class="benefits bottom left" id="bottom-left">
+        <p><span class="numbers-orange">24+</span>Lab and Research Fund</p>
+      </div>
+      <div class="benefits bottom right" id="bottom-right">
+        <p><span class="numbers-white">$2.73M</span>Total Matching Gifts</p>
+      </div>
+    </div>
+    <!-- use line break"<br></br> at the end of sentences with fewer lines" -->
+    <div id="check">
+      <p><span id="match-number">200+ </span>companies have matched employees' gifts Caltech. You can help leverage their philanthropy and keep that number growing!</p>
+      <p>Click <a href="">here</a> to check yours or your spouse's matching gifts eligibility or update your employment information.</p>
+    </div>
+    <div id="importance">
+      <div id="gifts">
+        <i id="first-gift-icon" class="fa fa-gift small-gift" aria-hidden="true"></i><span class="signs">+</span><i id="second-gift-icon" class="fa fa-gift small-gift" aria-hidden="true"></i><span class="signs">=</span><i class="fa fa-gift" aria-hidden="true" id="big-gift"></i>
+      </div>
+      <span id="your-gift" class="caption">Your Gift</span><span id="match" class="caption">Match</span><span id="impact" class="caption">Impact</span>
+    </div>
+  </body>
+</html>
