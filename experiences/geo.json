@@ -5,6 +5,20 @@
         "type" : "Feature",
         "geometry": {
           "type": "Point",
+          "coordinates": [-118.124535, 34.139304]
+        },
+        "properties": {
+          "position": "Project Management Intern",
+          "company": "California Institute of Technology",
+          "time": "June 2019 - August 2019",
+          "learn":"#caltech",
+          "icon": "http://maps.google.com/mapfiles/kml/paddle/red-stars.png"
+        }
+      },
+      {
+        "type" : "Feature",
+        "geometry": {
+          "type": "Point",
           "coordinates": [-122.338204, 47.607695]
         },
         "properties": {

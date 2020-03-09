@@ -1,9 +1,9 @@
 body {
-    background-color: #efefef;;
+    background-color: #efefef;
 }
 
 div#navgroup {
-    background-color: rgba(255,255,240, 0.85);
+    background-color: rgba(203,205,209, 0.85);
     top: 0px;
     left: 0px;
     width: 100%;
@@ -15,7 +15,7 @@ div#firstdiv, #bylines-firstdiv {
     padding-top: 10%;
     padding-bottom: 7%;
     border-radius: 0 0 25% 0;
-    background-color: #caebf2;
+    /*background-color: #caebf2;*/
 }
 
 #bylines-firstdiv>div {
@@ -55,25 +55,26 @@ div#second-div {
     border-radius: 27.5% 0 0 0;
 }
 
-h1#name {
+#name {
     margin-left: 15px;
     margin-bottom: 15px;
     padding-bottom: 10px;
     padding-top: 2px;
-    font-family: 'Pacifico', cursive;
-    font-size: 64px;
+    font-family: 'Sen', sans-serif;
+    font-size: 28px;
     text-align: left;
-    letter-spacing: 0.03em;
-    text-shadow: 1px 1px #5ebde9;
+    text-transform: uppercase;
 }
 
-h1#name a {
+#name a {
     text-decoration: none;
     color: #1f1f1f;
 }
 
-h1#name a:hover {
-    color: #1f1f1f;
+#name a:hover {
+    color: hsla(0, 0%, 0%, 0.5);
+    transition-property: color;
+    transition-duration: 0.5s;
 }
 
 h3 {
@@ -119,17 +120,17 @@ ul#navmenu a {
 }
 
 a#active {
-    color: #989ca0 !important;
+    color: hsla(0, 0%, 0%, 0.5) !important;
 }
 
 ul#navmenu a:hover {
-    color: #dddddd;
+    color: rgba(164,167,162);
     text-decoration: none;
     transition-property: color;
     transition-duration: 0.5s;
 }
 
-div.bylines>header {
+.bylines>header {
     background-color: #cfcfcf;
     height: 4.2em;
 }
@@ -146,6 +147,82 @@ h2 {
     margin: 1.5% auto 1% auto;
     vertical-align: text-top;
 }
+
+.subhed + p {
+    text-align: center;
+    font-weight: 600;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+div[id^="title"] {
+    font-size: 42px;
+    color: #6a6a6a;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+#all_title {
+    width: 100%;
+    margin-top: 90px;
+}
+
+#title_1 {
+    width: 50%;
+    vertical-align: text-top;
+}
+
+#title_2 {
+    width: 3%;
+    vertical-align: middle;
+}
+
+#title_3 {
+    width: 45%;
+    vertical-align: text-bottom;
+}
+
+#title_1 h2 {
+    text-align: right;
+    font-family: 'Merienda One', cursive;
+    font-size: 24px;
+    position: relative;
+    animation-name: come-right;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+@keyframes come-right {
+    0%   {left:-80px;}
+    25%  {left:50px;}
+    50%  {left:120px;}
+    75%  {left:50px;}
+    100% {left:0px;}
+  }
+
+#title_2 h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+#title_3 h2{
+    text-align: left;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 24px;
+    position: relative;
+    animation-name: come-left;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+@keyframes come-left {
+    0%   {right:-80px;}
+    25%  {right:50px;}
+    50%  {right:120px;}
+    75%  {right:50px;}
+    100% {right:0px;}
+  }
 
 .exps {
     font-weight: bold;
@@ -203,9 +280,13 @@ div.bylines {
     margin: auto;
     width: 90%;
     height: 350px;
-    background-color: #efefef;
+    background-color: #ece9e3;
     border-radius: 15px;
-    border: 1px solid #a9a9a9;
+    border: 2px solid #a9a9a9;
+    position: relative;
+    animation-name: come-up;
+    animation-duration: 1s;
+    animation-timing-function: linear;
 }
 
 div#expsort {
@@ -214,7 +295,7 @@ div#expsort {
 }
 
 div.workexp {
-    border-left: #ff3b3f solid 5px;
+    border-left: #36445A outset 5px; 
     margin-top: 3%;
     margin-bottom: 2%;
     padding: 0 1% 0 1%;
@@ -224,13 +305,6 @@ div.workexp {
 img.frameimg {
     max-width: 80%;
     margin-left: 8%;
-}
-
-#travel {
-    width: 830px;
-    margin: 20px auto 80px auto;
-    background-image: url("http://yinx19.wludci.info/pier.jpg");
-    background-size: 100%;
 }
 
 #map {
@@ -245,20 +319,47 @@ div.titlediv {
 
 #profile-photo {
     width: 90%;
-    margin-left: 3%;
+    margin-left: 15%;
+    border-radius: 100px;
 }
 
 #photo {
     margin-bottom: 5%;
+    position: relative;
+    animation-name: come-up;
+    animation-duration: 2s;
+    animation-timing-function: linear;
 }
 
-div#intro {
-    background: #efefef;
+#intro {
+    background: rgb(239,239,239, 0.8);
     box-shadow: inset 0 0 15px #cfcfcf;
     border-radius: 100px;
+    animation-name: glow;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
 }
 
-label {
+#intro a {
+    animation-name: glow;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes come-up {
+    0%   {bottom:-200px;}
+    50%  {bottom:-100px;}
+    100%  {bottom: 0px;}
+  }
+
+  @keyframes glow {
+    0%   {color: #cfcfcf;}
+    50%  {color:rgba(203,205,209);}
+    100%  {color: rgba(164,167,162);}
+  }
+
+
+label, input, select, textarea {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
 }
@@ -296,12 +397,14 @@ p {
     font-size: 16px;
 }
 
-p#personalinfo {
+#personalinfo {
     vertical-align: text-top;
-    padding: 40px 25px 40px 45px;
-    line-height: 1.8;
+    padding: 36px 25px 40px 43px;
+    line-height: 1.7;
     width: 100%;
     margin: auto;
+    font-size: 15px;
+    font-weight: 550;
 }
 
 #contact {
@@ -319,7 +422,7 @@ p#personalinfo {
 input, textarea {
     outline: none;
     transition-property: border;
-    transition-duration: 2s;
+    transition-duration: 1s;
 }
 
 button#submitbutton {
@@ -329,7 +432,7 @@ button#submitbutton {
 }
 
 textarea:focus, input:focus, select:focus {
-    border: 1.5px solid #ff3b3f;
+    border: 1.5px solid #6a6a6a;
 }
 
 button#submitbutton:hover {
@@ -346,7 +449,7 @@ button#submitbutton:visited {
 footer {
     text-align: center;
     font-family: "Montserrat","Helvetica Neue",sans-serif;
-    background-color: ivory;
+    background-color: rgba(203,205,209);
     padding: 1.5%;
 }
 
@@ -359,30 +462,43 @@ div#allexps {
     text-align: center;
 }
 
+@media screen and (min-width: 1800px) {
+    #all_title {
+        margin-top: 120px;
+    }
+    #personalinfo {
+        padding: 60px 25px 40px 50px;
+        line-height: 1.8;
+        font-size: 16px;
+    }
+}
+
 @media screen and (max-width: 1090px) {
     section>p {
         font-size: 15px;
     }
-}
-
-@media screen and (max-width: 900px) {
-    div#intro {
-        margin-top: 0;
-    }
-    div#firstdiv {
-        padding-top: 20%;
-    }
-    ul#navmenu a {
-        font-size: 14px;
-    }
-    h1#name {
-        font-size: 56px;
+    #intro {
+        margin-bottom: 30px;
     }
 }
 
 @media screen and (max-width: 970px) {
     #mihai {
         padding-top: 15px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    div#firstdiv {
+        padding-top: 20%;
+    }
+    ul#navmenu a {
+        font-size: 14px;
+    }
+    #personalinfo {
+        padding: 30px 20px 30px 40px;
+        line-height: 1.5;
+        font-size: 14px;
     }
 }
 
@@ -420,10 +536,9 @@ div#allexps {
 }
 
 @media screen and (max-width: 440px) {
-    h1.title {
-        font-size: 30px;
+    h1 {
+        font-size: 24px;
     }
-
     h2 {
         font-size: 20px;
     }
@@ -436,12 +551,6 @@ div#allexps {
     h4 {
         font-size: 16px;
         font-weight: bold;
-    }
-
-    h1#name {
-        font-size: 52px;
-        margin: auto;
-        width: 330px;
     }
 
     #navmenu a {
