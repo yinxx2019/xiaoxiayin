@@ -45,8 +45,9 @@ div#firstdiv, #bylines-firstdiv {
 
 #nav-icon {
   position: absolute;
+  right: 5px;
   border: none;
-  background-color: rgba(203,205,209, 0.1);
+  background-color: #cbcdd11a;
 }
 
 #nav-icon i {
