@@ -1,7 +1,7 @@
 var map;
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
-       center: {lat: 47.6062, lng: -122.3321},
+       center: {lat: 37.6062, lng: -122.3321},
        zoom: 1,
        mapTypeId: google.maps.MapTypeId.ROADMAP
     });
@@ -13,7 +13,7 @@ function initMap() {
        var comp = event.feature.getProperty("company");
        var time = event.feature.getProperty("time");
        var learn = event.feature.getProperty("learn");
-       infowindow.setContent('<h2>' + pos + '</h2>' + '<h3>' + comp + '</h3>' + '<h3>' + time + '</h3>' + '<a href=' + learn + '>Learn more about my experience at ' + comp + '</a>' );
+       infowindow.setContent('<h3>' + pos + '</h3>' + '<h4>' + comp + '</h4>' + '<h4>' + time + '</h4>' + '<a href=' + learn + '>Learn more about my experience at ' + comp + '</a>' );
        infowindow.setPosition(event.feature.getGeometry().get());
        infowindow.setOptions({pixelOffset: new google.maps.Size(0,-30)});
        infowindow.open(map);

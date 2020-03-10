@@ -15,7 +15,6 @@ div#firstdiv, #bylines-firstdiv {
     padding-top: 10%;
     padding-bottom: 7%;
     border-radius: 0 0 25% 0;
-    /*background-color: #caebf2;*/
 }
 
 #bylines-firstdiv>div {
@@ -46,13 +45,18 @@ div#firstdiv, #bylines-firstdiv {
 
 #nav-icon {
   position: absolute;
+  border: none;
+  background-color: rgba(203,205,209, 0.1);
 }
 
-div#second-div {
-    height: 45%;
-    padding-top: 6%;
-    background-color: #caebf2;
-    border-radius: 27.5% 0 0 0;
+#nav-icon i {
+    font-size: 20px;
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+
+#nav-icon i:hover, #nav-icon i:focus {
+    color: rgba(164,167,162)
 }
 
 #name {
@@ -85,6 +89,16 @@ h3 {
 h4 {
     font-family: "Lato","Helvetica Neue",sans-serif;
     font-weight: 650;
+}
+
+h4+a {
+    font-weight: 600;
+}
+
+h5 {
+    font-family: "Lato","Helvetica Neue",sans-serif;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 ul.dropdown-menu li {
@@ -148,7 +162,7 @@ h2 {
     vertical-align: text-top;
 }
 
-.subhed + p {
+.subhed+p {
     text-align: center;
     font-weight: 600;
     padding-left: 100px;
@@ -156,7 +170,6 @@ h2 {
 }
 
 div[id^="title"] {
-    font-size: 42px;
     color: #6a6a6a;
     text-transform: capitalize;
     margin-bottom: 20px;
@@ -226,7 +239,7 @@ div[id^="title"] {
 
 .exps {
     font-weight: bold;
-    font-size: 26px;
+    font-size: 23px;
     margin-top: 0.6%;
 }
 
@@ -471,6 +484,10 @@ div#allexps {
         line-height: 1.8;
         font-size: 16px;
     }
+
+    div#firstdiv, #bylines-firstdiv {
+        padding-top: 5%;
+    }
 }
 
 @media screen and (max-width: 1090px) {
@@ -489,8 +506,8 @@ div#allexps {
 }
 
 @media screen and (max-width: 900px) {
-    div#firstdiv {
-        padding-top: 20%;
+    #firstdiv {
+        padding-top: 18%;
     }
     ul#navmenu a {
         font-size: 14px;
@@ -503,6 +520,16 @@ div#allexps {
 }
 
 @media screen and (max-width: 768px){
+    .subhed {
+        font-size: 28px;
+    }
+
+    .subhed+p {
+        font-size: 12px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     #comments {
         margin-left: 4%
     }
@@ -521,26 +548,28 @@ div#allexps {
     }
 
     #bylines-firstdiv {
-        padding-top: 24%;
+        padding-top: 25%;
     }
 
     div#allexps {
         width: 100%;
     }
+
+    #map {
+        width: 500px;
+        height: 300px;
+        margin: 12px auto;
+    }
+
+    #profile-photo {
+        width: 80%;
+        margin-left: 8%;
+    }
 }
 
 @media screen and (max-width: 648px) {
-    div#firstdiv, #bylines-firstdiv {
-        padding-top: 30%;
-    }
-}
-
-@media screen and (max-width: 440px) {
-    h1 {
-        font-size: 24px;
-    }
-    h2 {
-        font-size: 20px;
+    div#firstdiv {
+        padding-top: 20%;
     }
 
     h3 {
@@ -553,6 +582,36 @@ div#allexps {
         font-weight: bold;
     }
 
+    h5 {
+        font-size: 14px;
+    }
+
+    h4+p, h5+p {
+        font-size: 12.5px;
+        padding-right: 10px;
+    }
+
+    #title_1 h2, #title_3 h2 {
+        font-size: 20px;
+    }
+
+    #title_2 h2 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    #title_1 {
+        width: 48%;
+    }
+    .subhed {
+        font-size: 20px;
+    }
+
     #navmenu a {
         font-size: 12.5px;
     }
@@ -563,5 +622,15 @@ div#allexps {
 
     #comments {
         margin-left: 4%
+    }
+
+    #map {
+        width: 350px;
+        height: 180px;
+        margin: 12px auto;
+    }
+
+    div#firstdiv {
+        padding-top: 27%;
     }
 }
