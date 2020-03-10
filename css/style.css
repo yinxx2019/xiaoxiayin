@@ -630,7 +630,11 @@ div#allexps {
         margin: 12px auto;
     }
 
-    div#firstdiv {
-        padding-top: 27%;
+    #firstdiv {
+        padding-top: 25%;
+    }
+
+    #all_title {
+        margin-top: 70px;
     }
 }
