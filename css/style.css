@@ -605,8 +605,8 @@ div#allexps {
         font-size: 24px;
     }
 
-    #title_1 {
-        width: 48%;
+    #title_1, #title_3 {
+        width: 42%;
     }
     .subhed {
         font-size: 20px;
@@ -636,5 +636,18 @@ div#allexps {
 
     #all_title {
         margin-top: 70px;
+    }
+
+    div[id^="title"] {
+        vertical-align: middle !important;
+    }
+
+    #title_2 {
+        margin: 0 10px;
+    }
+
+    #all_title h2 {
+        animation-name: glow;
+        animation-duration: 2s;
     }
 }
