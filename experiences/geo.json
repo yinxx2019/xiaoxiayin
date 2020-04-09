@@ -19,6 +19,20 @@
         "type" : "Feature",
         "geometry": {
           "type": "Point",
+          "coordinates": [-114.8, 33]
+        },
+        "properties": {
+          "position": "Marketing Assistant",
+          "company": "Rumba Room Live",
+          "time": "Septempber 2020 - November 2020",
+          "learn":"#rumba-room_jump",
+          "icon": "http://maps.google.com/mapfiles/kml/paddle/red-stars.png"
+        }
+      },
+      {
+        "type" : "Feature",
+        "geometry": {
+          "type": "Point",
           "coordinates": [-122.338204, 47.607695]
         },
         "properties": {
@@ -38,7 +52,7 @@
         "properties": {
           "position": "Content Creator Specialist",
           "company": "Washington and Lee University Office of Communications and Public Affairs",
-          "time": "2018 - present",
+          "time": "August 2018 - May 2019",
           "learn":"#wlcomm_jump",
           "icon": "http://maps.google.com/mapfiles/kml/paddle/red-stars.png"
         }
