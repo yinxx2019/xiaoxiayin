@@ -2,7 +2,7 @@ body {
     background-color: #efefef;
 }
 
-div#navgroup {
+#navgroup {
     background-color: rgba(203,205,209, 0.85);
     top: 0px;
     left: 0px;
@@ -11,7 +11,7 @@ div#navgroup {
     z-index: 10;
 }
 
-div#firstdiv, #bylines-firstdiv {
+#firstdiv, #bylines-firstdiv {
     padding-top: 10%;
     padding-bottom: 7%;
     border-radius: 0 0 25% 0;
@@ -102,33 +102,24 @@ h5 {
     font-weight: bold;
 }
 
-ul.dropdown-menu li {
-    font-family: "lato","Helvetica Neue",sans-serif;
-    text-align: center;
-}
-
-ul.dropdown-menu a{
-    background-color: white;
-}
-
-div.workexp:target {
+/* div.workexp:target {
     padding-top: 14%;
-}
+} */
 
 
-ul#navmenu {
+#navmenu {
     margin-top: 5%;
     margin-right: 1%;
     text-align: right;
 }
 
-ul#navmenu li {
+#navmenu li {
     margin-right: 1.5%;
     display: inline-block;
     font-family: "Montserrat","Helvetica Neue",sans-serif;
 }
 
-ul#navmenu a {
+#navmenu a {
     color: #1f1f1f;
     font-weight: 750;
     font-size: 16px;
@@ -138,7 +129,7 @@ a#active {
     color: hsla(0, 0%, 0%, 0.5) !important;
 }
 
-ul#navmenu a:hover {
+#navmenu a:hover {
     color: rgba(164,167,162);
     text-decoration: none;
     transition-property: color;
@@ -406,7 +397,7 @@ h2 a:hover {
     background-color: #bed6e9;
 }
 
-p {
+p, .workexp li {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
 }
@@ -510,7 +501,7 @@ div#allexps {
     #firstdiv {
         padding-top: 18%;
     }
-    ul#navmenu a {
+    #navmenu a {
         font-size: 14px;
     }
     #personalinfo {
@@ -587,8 +578,8 @@ div#allexps {
         font-size: 14px;
     }
 
-    h4+p, h5+p {
-        font-size: 12.5px;
+    h4+p, h5+p, .workexp li {
+        font-size: 13.5px;
         padding-right: 10px;
     }
 
