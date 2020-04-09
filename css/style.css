@@ -2,7 +2,7 @@ body {
     background-color: #efefef;
 }
 
-div#navgroup {
+#navgroup {
     background-color: rgba(203,205,209, 0.85);
     top: 0px;
     left: 0px;
@@ -11,7 +11,7 @@ div#navgroup {
     z-index: 10;
 }
 
-div#firstdiv, #bylines-firstdiv {
+#firstdiv, #bylines-firstdiv {
     padding-top: 10%;
     padding-bottom: 7%;
     border-radius: 0 0 25% 0;
@@ -102,9 +102,9 @@ h5 {
     font-weight: bold;
 }
 
-div.workexp:target {
+/* div.workexp:target {
     padding-top: 14%;
-}
+} */
 
 
 #navmenu {
@@ -397,7 +397,7 @@ h2 a:hover {
     background-color: #bed6e9;
 }
 
-p {
+p, .workexp li {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
 }
@@ -578,8 +578,8 @@ div#allexps {
         font-size: 14px;
     }
 
-    h4+p, h5+p {
-        font-size: 12.5px;
+    h4+p, h5+p, .workexp li {
+        font-size: 13.5px;
         padding-right: 10px;
     }
 
