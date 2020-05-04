@@ -1,12 +1,18 @@
 function displayNav() {
-  let elt = document.getElementById('mobile').style.display;
+  let elt = document.querySelector('#mobile').style.display;
   if ( elt == "block") {
-  document.getElementById('mobile').style.display = "none";
+    document.querySelector('#mobile').style.display = "none";
 } else {
-  document.getElementById('mobile').style.display = "block";
+  document.querySelector('#mobile').style.display = "block";
 }
 }
 
 var el;
-el = document.getElementById('nav-icon');
+el = document.querySelector('#nav-icon');
 el.addEventListener('click', displayNav);
+
+// auto update copyright date
+
+var date = new Date();
+var year = date.getFullYear();
+document.querySelector('#copyright-date').innerHTML = year;
