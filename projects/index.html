@@ -52,53 +52,95 @@
       <header class="col-xs-12">
         <h2 class="subhed">Web Development and Multimedia Projects</h2>
       </header>
-      <div>
-        <div id="xiaoxiayin" class="col-xs-11 col-sm-10 col-xs-offset-1 workexp">
-          <h3 class="exps">xiaoxiayin.com</h3>
-          <h4>About the Project</h4>
-          <p>xiaoxiayin.com is completely designed, coded and launched by Xiaoxia Yin. Starting in 2018, she maintains the website and adds new contents when she learns cool skills or has wonderful experiences to share.</p>
+      <div id="all_projects" class="col-xs-12">
+        <div class="parent col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <div id="connect_four" class="project"></div>
+          <div id="connect_four_hover" class="project_hover" onclick="displayDetail(this.id)"></div>
         </div>
-        <div id="insider" class="col-xs-11 col-sm-10 col-xs-offset-1 workexp">
-          <h3 class="exps"><a href="https://github.com/yinxx2019/insider" target="_blank">An Insider's Guide to Beijing, China</a></h3>
-          <h4>About the Project</h4>
-          <p>I used HTML, CSS, JavaScript and APIs (Maps and Charts) to build a <a href="https://yinxx2019.github.io/insider/" target="_blank">a travel information website</a> that includes a map of Beijing's weather chart, a map of best restaurants and a traveling cost estimator.</p>
+        <div id="connect_four_hover_detail" class="detail">
+          <div onclick="closeDetail(this)">&#10005;</div>
+          <h3>Connect Four</h3>
+          <h4>Python3, Python Mode for Processing</h4>
+          <section></section>
         </div>
-        <div id="chingu_solo" class="col-xs-11 col-sm-10 col-xs-offset-1 workexp">
-          <h3 class="exps"><a href="https://github.com/yinxx2019/google_fonts" target="_blank">Google Fonts</a></h3>
-          <h4 id="caltech_work_jump">About the Project</h4>
-          <p>I used HTML, CSS and JavaScript to build a <a href="https://yinxx2019.github.io/google_fonts/" target="_blank">Google Fonts landing page</a> with features including typing to see how each fonts look, changing font sizes, switching dark and light themes, switching list and grid views and refreshing.</p>
+        <div class="parent col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <div id="xiaoxiayin" class="project"></div>
+          <div id="xiaoxiayin_hover" class="project_hover" onclick="displayDetail(this.id)"></div>
         </div>
-        <div id="caltech_work" class="col-xs-11 col-sm-10 col-xs-offset-1 workexp">
-          <h3 class="exps">Matching Gifts Email Marketing</h3>
-          <h4>About the Project</h4>
-          <p>As part of my matching gifts project deliverables in summer 2019 at Caltech (see more details of the project in <a href="/experiences#caltech_jump">Experiences</a>), I used HTML and CSS to design an email marketing template and optimized it so that it can be distributed and mail merged through both email marketing tools and basic email clients. I also designed InDesign postcard templates and Facebook Ads to increase donors’ awareness of matching their gifts to Caltech.</p>
-          <h4><a href="match" target="_blank">Email Marketing Sample</a></h4>
-          <p>*Use the contact page to request print and social media samples</p>
+        <div id="xiaoxiayin_hover_detail" class="detail">
+          <div onclick="closeDetail(this)">&#10005;</div>
+          <h3>xiaoxiayin.com</h3>
+          <h4>HTML, CSS, Bootstrap 3, JavaScript</h4>
+          <section></section>
         </div>
-        <div id="jour341" class="col-xs-11 col-sm-10 col-xs-offset-1 workexp">
-          <h3 class="exps">83percent.org</h3>
-          <h4>About the Project</h4>
-          <p><a href="http://83percent.org" target="_blank">W&amp;L at a Crossroads: Direction of Diversity is Not Black and White</a>, was reported, written, produced and designed by eight students including me who enrolled in a journalism course, Multimedia Storytelling Design, taught by Professors Jeff Barry and Toni Locy in winter 2018 at Washington and Lee University in Lexington, Virginia. We studied how international news outlets including The New York Times and The Guardian put together their Pulitzer Prize-winning interactive stories. We went “behind the curtain” and learned web design skills through HTML, CSS and JavaScript, and used other digital tools to imagine, design and create powerful, compelling interactive features with audio, video, graphics—and words—that are on the cutting edge of journalism and mass communications. <strong>*This project won Society of Professional Journalists Region 2 Mark of Excellence Awards for the Best Use of Multimedia.</strong></p>
-          <h4>My Duties</h4>
-          <p>I researched and designed the “Lee Chapel” section of the website. In addition, I was in charge of conducting interviews, taking pictures and editing videos. I took banner photos using a drone and a single-lens reflex camera. I edited photos using Adobe Lightroom and Photoshop. </p>
+        <div class="parent col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <div id="insider" class="project"></div>
+          <div id="insider_hover" class="project_hover" onclick="displayDetail(this.id)"></div>
         </div>
-        <div id="dci108" class="col-xs-11 col-sm-10 col-xs-offset-1 workexp">
-          <h3 class="exps">Mock Convention</h3>
-          <p>Collaborating with two teammates, I used HTML, CSS and Bootstrap to create a <a href="http://mockconpolitical.wludci.info" target="_blank">landing page</a> for the Political Department of Mock Convention, Washington and Lee University's mock presidential nominating process with more than 100 years of success.</p>
+        <div id="insider_hover_detail" class="detail">
+          <div onclick="closeDetail(this)">&#10005;</div>
+          <h3>An Insider's Guide to Beijing, China</h3>
+          <h4>HTML, CSS, JavaScript, Google APIs (Maps, Charts)</h4>
+          <section></section>
         </div>
-        <div id="libraries" class="col-xs-11 col-sm-10 col-xs-offset-1 workexp">
-          <h3 class="exps"><a href="https://yinxx2019.github.io/librariesUX/" target="_blank">User Experience Research</a></h3>
-          <h4>Washington and Lee University's <a href="https://library.wlu.edu/">library site</a></h4>
-          <p>Collaborating with a teammate, I conducted user interviews with a diverse group of study participants, evaluated the website's current usability and proposed UX strategy to improve its effectiveness, efficiency and satisfaction.</p>
+        <div class="parent col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <div id="chingu" class="project"></div>
+          <div id="chingu_hover" class="project_hover" onclick="displayDetail(this.id)"></div>
         </div>
-        <header class="col-xs-12">
+        <div id="chingu_hover_detail" class="detail">
+          <div onclick="closeDetail(this)">&#10005;</div>
+          <h3>Google Fonts Mockup</h3>
+          <h4>HTML, CSS, JavaScript</h4>
+          <section></section>
+        </div>
+        <div class="parent col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <div id="matching_gift" class="project"></div>
+          <div id="matching_gift_hover" class="project_hover" onclick="displayDetail(this.id)"></div>
+        </div>
+        <div id="matching_gift_hover_detail" class="detail">
+          <div onclick="closeDetail(this)">&#10005;</div>
+          <h3>Caltech Matching Gift Email Template</h3>
+          <h4>HTML, CSS, MailChimp</h4>
+          <section></section>
+        </div>
+        <div class="parent col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <div id="diversity" class="project"></div>
+          <div id="diversity_hover" class="project_hover" onclick="displayDetail(this.id)"></div>
+        </div>
+        <div id="diversity_hover_detail" class="detail">
+          <div onclick="closeDetail(this)">&#10005;</div>
+          <h3>W&amp;L at a Crossroads: Direction of Diversity is Not Black & White</h3>
+          <h4>HTML, CSS, Bootstrap 4, JavaScript</h4>
+          <section></section>
+        </div>
+        <div class="parent col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <div id="mock_con" class="project"></div>
+          <div id="mock_con_hover" class="project_hover" onclick="displayDetail(this.id)"></div>
+        </div>
+        <div id="mock_con_hover_detail" class="detail">
+          <div onclick="closeDetail(this)">&#10005;</div>
+          <h3>Mock Convention Website Prototype</h3>
+          <h4>HTML, CSS</h4>
+          <section></section>
+        </div>
+        <div class="parent col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <div id="library" class="project"></div>
+          <div id="library_hover" class="project_hover" onclick="displayDetail(this.id)"></div>
+        </div>
+        <div id="library_hover_detail" class="detail">
+          <div onclick="closeDetail(this)">&#10005;</div>
+          <h3>Washington and Lee University Library User Experience Research</h3>
+          <h4>user interviews, web analytics, prototypes A/B testing </h4>
+          <section></section>
+        </div>
+        <!-- <header class="col-xs-12">
           <h2 class="subhed">News Broadcasting</h2>
         </header>
-        <div id="jour202" class="col-xs-11 col-sm-10 col-xs-offset-1 workexp">
+        <div id="jour202">
           <h4><a href="https://youtu.be/dz5WJfbfS8A" target="_blank">Cross Race Bias: Asian students have been frequently misidentified at Washington and Lee University</a></h4>
           <h4><a href="https://youtu.be/cd8Ike6TsLY" target="_blank">Animal Testing at Washington and Lee University</a></h4>
           <h4><a href="https://youtu.be/tU6Fs1C4YE0" target="_blank">Music Major Camilla Higgins talks about her love of music</a></h4>
-        </div>
+        </div> -->
       </div>
     </div>
     <footer class="row">&copy;<span id="copyright-date"></span>, Xiaoxia Yin</footer>
