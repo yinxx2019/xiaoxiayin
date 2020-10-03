@@ -2,9 +2,18 @@ function displayNav() {
   let elt = document.querySelector('#mobile').style.display;
   if ( elt == "block") {
     document.querySelector('#mobile').style.display = "none";
-} else {
+  } else {
   document.querySelector('#mobile').style.display = "block";
+  }
 }
+
+function displayDetail(clickedId) {
+  let displayId = clickedId + "_detail";
+  document.getElementById(displayId).style.display = "block";
+}
+
+function closeDetail(clickedElem) {
+  clickedElem.parentNode.style.display = "none";
 }
 
 var el;
