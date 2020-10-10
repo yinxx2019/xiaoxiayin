@@ -381,6 +381,7 @@ div#expsort {
     margin-left: 95%;
     color: rgba(203,205,209);
     font-size: 50px;
+    cursor: pointer;
 }
 
 .detail>h3 {
@@ -392,9 +393,13 @@ div#expsort {
     color: rgb(106, 106, 106);
 }
 
+.detail>h5 {
+    text-align: center;
+}
+
 .detail>section {
     display: inline-block;
-    width: 45%;
+    padding: 5%;
 }
 
 .workexp {
