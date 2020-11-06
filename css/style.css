@@ -363,10 +363,10 @@ div#expsort {
 /*finish update*/
 /*10/2 update*/
 .detail {
-    left: 10%;
+    left: 20%;
     top: 15%;
-    width: 80%;
-    height: 80%;
+    width: 60%;
+    height: 60%;
     position: fixed;
     z-index: 99999;
     border: solid rgb(106, 106, 106) 2px;
@@ -380,7 +380,7 @@ div#expsort {
     height: 6%;
     margin-left: 95%;
     color: rgba(203,205,209);
-    font-size: 50px;
+    font-size: 40px;
     cursor: pointer;
 }
 
