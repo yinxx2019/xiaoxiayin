@@ -329,6 +329,11 @@ div#expsort {
     transition-duration: 1s;
     opacity: 1;
 }
+
+#covid {
+    background-image: url("support.png");
+}
+
 #connect_four {
     background-image: url("connect_four.png");
 }
